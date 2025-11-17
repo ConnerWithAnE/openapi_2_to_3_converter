@@ -226,7 +226,7 @@ def convert_schema(api, verbose=False, request=None):
 
 # file suffix -> read(handle) function, write(data, handle) function
 format_functions = {
-    '.json': {'load': json.load, 'dump': json.dump},
+    '.json': {'load': json.load, 'dump': lambda obj, f: json.dump(obj, f, indent=4, ensure_ascii=False)},
     '.yaml': {'load': yaml.full_load, 'dump': yaml.dump},
 }
 
