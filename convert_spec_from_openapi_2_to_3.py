@@ -252,7 +252,7 @@ if __name__ == '__main__':
         print(f"ERROR: {args.input_file} not found")
         exit(1)
     for param, fname in (('input', args.input_file,), ('output', args.output_file,)):
-        for ext, format_function in format_functions.items()
+        for ext, format_function in format_functions.items():
             if fname.endswith(ext):
                 break
         else:

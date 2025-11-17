@@ -19,6 +19,16 @@ converted output passes that package's `validate_v3_spec` schema validation.
 This code is licensed under the GNU GPL v3, because I look forward to
 getting lots of improvements to its conversions :-)
 
+# Setup
+
+## Install Packages
+
+First ensure that all the required packages are installed:
+
+```sh
+$ pip install -r requirements.txt
+```
+
 # Usage
 
 ## Command line
